@@ -6,27 +6,27 @@ use Illuminate\Support\Facades\Schema;
 
 class AddCmFirebaseTokenColumnToUsersTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('cm_firebase_token')->nullable();
-        });
-    }
+  /**
+   * Run the migrations.
+   *
+   * @return void
+   */
+  public function up()
+  {
+    // Schema::table('users', function (Blueprint $table) {
+    //   $table->string('cm_firebase_token')->nullable();
+    // });
+  }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('cm_firebase_token');
-        });
-    }
+  /**
+   * Reverse the migrations.
+   *
+   * @return void
+   */
+  public function down()
+  {
+    // Schema::table('users', function (Blueprint $table) {
+    //   $table->dropColumn('cm_firebase_token');
+    // });
+  }
 }
