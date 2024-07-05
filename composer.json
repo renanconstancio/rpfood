@@ -50,6 +50,7 @@
     },
     "autoload": {
         "files": [
+            "app/helpers.php",
             "app/Library/Constants.php",
             "app/Library/Constant.php",
             "app/Library/Responses.php"

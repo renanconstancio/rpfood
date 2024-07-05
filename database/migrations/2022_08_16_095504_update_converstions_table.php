@@ -21,10 +21,10 @@ class UpdateConverstionsTable extends Migration
       // $table->foreignId('last_message_id')->nullable();
       // $table->timestamp('last_message_time')->nullable();
       // $table->integer('unread_message_count')->default(0);
-      $table->dropColumn('message');
-      $table->dropColumn('reply');
-      $table->dropColumn('checked');
-      $table->dropColumn('image');
+      // $table->dropColumn('message');
+      // $table->dropColumn('reply');
+      // $table->dropColumn('checked');
+      // $table->dropColumn('image');
     });
   }
 
@@ -36,7 +36,7 @@ class UpdateConverstionsTable extends Migration
   public function down()
   {
     Schema::table('conversations', function (Blueprint $table) {
-      // $table->renameColumn('sender_id', 'user_id');
+      $table->renameColumn('sender_id', 'user_id');
       $table->string('message');
       $table->dropColumn('receiver_id');
       $table->dropColumn('receiver_type');
