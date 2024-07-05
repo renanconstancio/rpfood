@@ -15,12 +15,12 @@ class UpdateConverstionsTable extends Migration
   {
     Schema::table('conversations', function (Blueprint $table) {
       // $table->renameColumn('user_id', 'sender_id');
-      $table->string('sender_type');
-      $table->foreignId('receiver_id');
-      $table->string('receiver_type');
-      $table->foreignId('last_message_id')->nullable();
-      $table->timestamp('last_message_time')->nullable();
-      $table->integer('unread_message_count')->default(0);
+      // $table->string('sender_type');
+      // $table->foreignId('receiver_id');
+      // $table->string('receiver_type');
+      // $table->foreignId('last_message_id')->nullable();
+      // $table->timestamp('last_message_time')->nullable();
+      // $table->integer('unread_message_count')->default(0);
       $table->dropColumn('message');
       $table->dropColumn('reply');
       $table->dropColumn('checked');
