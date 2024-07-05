@@ -50,22 +50,9 @@
     },
     "autoload": {
         "files": [
-            "app/CentralLogics/banner.php",
-            "app/CentralLogics/category.php",
-            "app/CentralLogics/campaign.php",
-            "app/CentralLogics/customer.php",
-            "app/CentralLogics/product.php",
-            "app/CentralLogics/restaurant.php",
-            "app/CentralLogics/helpers.php",
-            "app/helpers.php",
-            "app/CentralLogics/order.php",
-            "app/CentralLogics/coupon.php",
-            "app/CentralLogics/sms_module.php",
-            "app/CentralLogics/filemanager.php",
             "app/Library/Constants.php",
             "app/Library/Constant.php",
             "app/Library/Responses.php"
-
         ],
         "psr-4": {
             "App\\": "app/",

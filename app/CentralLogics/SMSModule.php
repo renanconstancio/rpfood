@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 use Nexmo\Laravel\Facade\Nexmo;
 use Twilio\Rest\Client;
 
-class SMS_module
+class SMSModule
 {
     public static function send($receiver, $otp)
     {
@@ -186,7 +186,7 @@ class SMS_module
         return $response;
     }
 
-    
+
     public static function get_settings($name)
     {
         $config = DB::table('addon_settings')->where('key_name', $name)
