@@ -12,9 +12,9 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/delivery/js/app.js', 'public/delivery/js')
-    .postCss('resources/delivery/css/app.css', 'public/delivery/css', [
+mix.postCss('resources/delivery/css/app.css', 'public/delivery/css', [
       require('tailwindcss')
     ]);
 
-mix.minify('public/delivery/js/app.js')
-mix.minify('public/delivery/css/app.css')
+// mix.minify('public/delivery/js/app.js')
+// mix.minify('public/delivery/css/app.css')

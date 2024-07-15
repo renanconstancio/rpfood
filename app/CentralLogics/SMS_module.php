@@ -186,7 +186,7 @@ class SMS_module
         return $response;
     }
 
-    
+
     public static function get_settings($name)
     {
         $config = DB::table('addon_settings')->where('key_name', $name)

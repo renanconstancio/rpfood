@@ -10,17 +10,15 @@ use Illuminate\Support\Facades\Validator;
 
 class NewsletterController extends Controller
 {
-    public function index(Request $request)
-    {
-        $validator = Validator::make($request->all(), [
-            'email'=>'required|email|unique:newsletters,email',
-        ]);
-        if ($validator->fails()) {
-            return response()->json(['errors' => Helpers::error_processor($validator)], 403);
-        }
-        Newsletter::create(['email'=>$request->email]);
-        return response()->json(['message'=>translate('messages.subscription_successful')],200);
+  public function index(Request $request)
+  {
+    $validator = Validator::make($request->all(), [
+      'email' => 'required|email|unique:newsletters,email',
+    ]);
+    if ($validator->fails()) {
+      return response()->json(['errors' => Helpers::error_processor($validator)], 403);
     }
-
-
+    Newsletter::create(['email' => $request->email]);
+    return response()->json(['message' => translate('messages.subscription_successful')], 200);
+  }
 }

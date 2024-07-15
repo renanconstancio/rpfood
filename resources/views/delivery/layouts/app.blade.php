@@ -11,14 +11,14 @@
   <title>{{ config('app.name', 'Laravel') }}</title>
 
   <!-- Scripts -->
-  <script src="{{ mix('delivery/js/app.min.js') }}" defer></script>
+  <script src="{{ asset('delivery/js/app.js') }}"></script>
 
   <!-- Fonts -->
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
   <!-- Styles -->
-  <link href="{{ mix('delivery/css/app.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('delivery/css/app.css') }}" rel="stylesheet"/>
 </head>
 
 <body class="bg-gray-100">
